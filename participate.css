@@ -1,0 +1,220 @@
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+.grid-container {
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.4fr 1.5fr 1.5fr 0.4fr;
+  grid-template-rows: 0.5fr 2fr 2fr 1fr;
+  gap: 0px 0px;
+}
+
+header {
+  grid-area: 1 / 2 / 2 / 5;
+  background-color: #32908F;
+}
+
+#logo {
+
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #32908F;
+}
+.menu {
+  display: inline;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #E7ECEF;
+  margin: 6px;
+  transition: 0.4s;
+  position: relative;
+  left:20px;
+  top:20px;
+  
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F87575;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #E7ECEF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color:#B0B0B0;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+section {
+  grid-area: 2/ 1 / 3 / 5;
+  background-color: #E7ECEF;
+  overflow: hidden;  
+}
+
+container {
+  position: relative;
+  background-color: #32908F;
+}
+
+.text-block {
+  position: relative;
+  bottom: 30px;
+  background-color: #32908F;
+  color: white;
+  padding: 25px 25px 25px 25px;
+}
+
+img {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+}
+
+article {
+  grid-area: 3 / 1 / 5 / 5;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #5F464B;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 30px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #32908F;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+ font-size: 20px; 
+}
+
+#grow-a-mo {
+  background-color: #32908F;
+}
+#make-a-move {
+  background-color: #32908F;
+}
+#host-a-moment {
+  background-color: #32908F;
+}
+#mo-your-own-way {
+  background-color: #32908F;
+}
+
+.mascot{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  float:right;
+}
+
+.accordion {
+  position:relative;
+  left:-20px;
+  background-color: #5F464B;
+  color: #E7ECEF;
+  cursor: pointer;
+  padding: 20px;
+  width: 102.2%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #F87575; 
+}
+
+.panel {
+  padding: 0 0px;
+  display: none;
+  background-color: E7ECEF;
+  overflow: hidden;
+  font-size: 30px;
+}
+
+
+.sign-up{
+  position:relative;
+  left:50px;
+  top:100px;
+  background-color: #F87575; /* Green */
+  border: none;
+  color: white;
+  padding: 14px 40px;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sign-up:hover {
+  background-color: #5F464B;
+  color: white;
+}

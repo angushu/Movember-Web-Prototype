@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="donate.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ef329bdc05.js" crossorigin="anonymous">
+	</script>
+	<script src="donate.js">
+</script>
+</head>
+
+<body>
+	<div class="grid-container">
+		<header>
+			<img id="logo" src="images/logo.png"/>
+		</header>
+		<nav>
+			<div class="menu" onclick="openNav()">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				<a href="index.html">Home</a>
+				<a href="participate.html">Participate</a>
+				<a href="donate.html">Donate</a>
+				<a href="work-we-fund.html">Work We Fund</a>
+				<a href="documentation.html">Documentation</a>
+			</div>
+		</nav>
+		<section>
+<div class="container">
+				<img 
+       src="images/donate/omar-ram-GlqDZbmbm4Q-unsplash.jpg"  alt="Photo by Omar Ram on Unsplash" >
+  <div class="text-block">
+    <h1>Help us support men in need</h1>
+    <p>Whether you're looking to donate to a Mo Bro or a Mo Sister or just considering supporting our organisation, your support means the world to us. Through our funding, we can deliver groundbreaking health projects that can change the face of men's health. </p>
+  </div>
+</div>
+  </section>
+  <article>
+    <button class="tablink" onclick="openPage('general', this, )">General</button>
+    <button class="tablink" onclick="openPage('specific', this)" id="defaultOpen">Specific</button>
+
+        <div id="general" class="tabcontent">
+      
+ <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="ex. John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="ex. john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="ex. 48 Rawson Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="ex. Sydney">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="ex. NSW">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="ex.  1234">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="ex. John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="ex. 1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="ex. August">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="ex. 2021">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="ex. 352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <input type="submit" value="Donate" class="btn">
+      </form>
+    </div>
+  </div>
+    </div>
+    </div>
+
+    <div id="specific" class="tabcontent">
+      <form id="regForm" action="/action_page.php">
+        <h1>Donate:</h1>
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">Search:
+          <p><input placeholder="Search..." oninput="this.className = ''" name="search"></p>
+        </div>
+ 
+        <div class="tab">Donation Amount:
+         <p><input placeholder="$$$..." oninput="this.className = ''" name="value"></p>
+        </div>
+
+        <div class="tab">Name:
+          <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+          <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+        </div>
+        
+        <div class="tab">Contact Details:
+          <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+          <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+        </div>
+
+        
+        <div class="tab">Payment Details:
+ <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="ex. John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="ex. 1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="ex. August">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="ex. 2021">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="ex. 352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+ <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="ex. John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="ex. john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="ex. 48 Rawson Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="ex. Sydney">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="ex. NSW">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="ex.  1234">
+              </div>
+            </div>
+          </div>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+    </div>
+
+  </article>
+</div>
+  </body>
+</html>

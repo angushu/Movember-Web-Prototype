@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="participate.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<script src="participate.js">
+	</script>
+</head>
+
+<body>
+	<div class="grid-container">
+		<header>
+      <img id="logo" src="images/logo.png"/>
+		</header>
+		<nav>
+			<div class="menu" onclick="openNav()">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				<a href="index.html">Home</a>
+				<a href="participate.html">Participate</a>
+				<a href="donate.html">Donate</a>
+				<a href="work-we-fund.html">Work We Fund</a>
+				<a href="documentation.html">Documentation</a>
+			</div>
+		</nav>
+		<section>
+<div class="container">
+				<img src="images/participate/tim-mossholder-bo3SHP58C3g-unsplash.jpg"  alt="Photo by Tim Mossholder on Unsplash" >
+  <div class="text-block">
+    <h1>Choose your M.O</h1>
+    <p>There are many different ways to participate in the Movember Movement. Our job is to make this process of selection nice and simple. Whether you choose to grow, move, host or go solo, there is opprtunity for everyone irrespective of age and gender.</p>
+  </div>
+</div>
+    <button class="tablink" onclick="openPage('grow-a-mo', this)"id="defaultOpen">Grow a Mo</button>
+    <button class="tablink" onclick="openPage('make-a-move', this)" >Make a Move</button>
+        <button class="tablink" onclick="openPage('host-a-moment', this)">Host a Moment</button>
+        <button class="tablink" onclick="openPage('mo-your-own-way', this)">Mo your own way</button>
+  </section>
+  <article>
+        <div id="grow-a-mo" class="tabcontent">
+          <h2>Grow a Mo</h2>
+          <h2>Your Mo could make a difference</h2>
+          <p>How can you change the face of men’s health? The answer is right under your nose</p>
+          <img class="mascot" src="images/participate/grow.png"/>
+          <button type="sign-up" class="sign-up">Sign-up Today!</button>
+          <button class="accordion">Requirements</button>
+          <div class="panel">
+            <ol>
+              <li>CHOOSE A STYLE </li>
+              <li>SHAVE DOWN </li>
+              <p>your money maker should be smooth as silk for Movember 1st.
+
+              </p>
+              <li>STRUT YOUR STUFF </li>
+              <p>use the rest of the month to start conversations and inspire donations.</p>
+            </ol>
+          </div>
+          <button class="accordion">Resources</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div id="make-a-move" class="tabcontent">
+          <h2>Make a Move</h2>
+          <h3>Join the movement today</h3>
+
+          <p>Commit to running or walking 60kms over the month for the 60 men we lose to suicide each hour, every hour across the world </p>
+          <img class="mascot" src="images/participate/move.png"/>
+          <button type="sign-up" class="sign-up">Sign-up Today!</button>
+
+          <button class="accordion">Requirements</button>
+          <div class="panel">
+            <ol>
+              <li>GET READY </li>
+              <p>Connect your fitness tracker to your Mo Space to log every step. Don't have one? Use your phone or post updates manually on your Mo Space </p>
+              <li>CHIP AWAY, YOUR WAY </li>
+              <p>Hit it fast. Take it slow. Run solo. Join a team. Go outside. Or jump on the treadmill. </p>
+              <li>MAKE IT COUNT </li>
+              <p>Seize every opportunity to start important conversations.</p>
+            </ol>
+          </div>
+
+          <button class="accordion">Resources</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div id="host-a-moment" class="tabcontent">
+          <h2>Host a Moment</h2>
+          <h3>THE MORE THE MERRIER</h3>
+          <p>Rally a crew and get creative. It’s in your hands.</p>
+          <img class="mascot" src="images/participate/host.png"/>
+          <button type="sign-up" class="sign-up">Sign-up Today!</button>
+
+          <button class="accordion">Requirements</button>
+          <div class="panel">
+            <ol>
+              <li>CHOOSE YOUR MO-MENT </li>
+              <p>The type of get-together is completely up to you. </p>
+              <li>SHOUT IT OUT </li>
+              <p>Let family and friends know where you’ll be, and when. </p>
+              <li>MAKE IT COUNT </li>
+              <p>Collect donations from attendees. </p>
+            </ol>
+          </div>
+
+          <button class="accordion">Resources</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div id="mo-your-own-way" class="tabcontent">
+          <h2>Mo your own way</h2>
+          <h3> Feeling Brave? Choose to go Mono
+
+          </h3>
+          <p>Complete a choose-your-own-adventure challenge epic in scope and scale. </p>
+          <img class="mascot" src="images/participate/go.png"/>
+          <button type="sign-up" class="sign-up">Sign-up Today!</button>
+
+          <button class="accordion">Requirements</button>
+          <div class="panel">
+            <ol>
+              <li>RAISE SOME BROWS  </li>
+              <p>Get creative and push your limits</p>
+              <li>WHENEVER, WHEREVER  </li>
+              <p>Indoors, outdoors, in a single day, over several weeks or across the year. This is your challenge. You make the rules. . </p>
+              <li>MAKE IT EPIC </li>
+              <p>Seize every opportunity to start important conversations. </p>
+            </ol>
+          </div>
+
+          <button class="accordion">Resources</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+  </article>
+</div>
+  </body>
+</html>
